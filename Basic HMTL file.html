@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--This is to indicate that we're using html5
+Tips and Notes
+Tip: The <!DOCTYPE> declaration is NOT case sensitive.
+
+Common DOCTYPE Declarations
+HTML 5
+<!DOCTYPE html>
+HTML 4.01 Strict
+This DTD contains all HTML elements and attributes, but does NOT INCLUDE presentational or deprecated elements (like font). Framesets are not allowed.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+HTML 4.01 Transitional
+This DTD contains all HTML elements and attributes, INCLUDING presentational and deprecated elements (like font). Framesets are not allowed.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+HTML 4.01 Frameset
+This DTD is equal to HTML 4.01 Transitional, but allows the use of frameset content.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+XHTML 1.0 Strict
+This DTD contains all HTML elements and attributes, but does NOT INCLUDE presentational or deprecated elements (like font). Framesets are not allowed. The markup must also be written as well-formed XML.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+XHTML 1.0 Transitional
+This DTD contains all HTML elements and attributes, INCLUDING presentational and deprecated elements (like font). Framesets are not allowed. The markup must also be written as well-formed XML.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+XHTML 1.0 Frameset
+This DTD is equal to XHTML 1.0 Transitional, but allows the use of frameset content.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+XHTML 1.1
+This DTD is equal to XHTML 1.0 Strict, but allows you to add modules (for example to provide Ruby support for East-Asian languages).
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+-->
+
+<html>
+
+<head>
+
+    <!--
+META TAG
+Metadata is data (information) about data.
+Tips and Notes
+Note: <meta> tags always go inside the <head> element.
+
+Note: Metadata is always passed as name/value pairs.
+Don't have to be close (in html4 it was mandatory)
+Note: The content attribute MUST be defined if the name 
+or the http-equiv attribute is defined. If none of these are
+ defined, the content attribute CANNOT be defined.
+
+The <meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, 
+but will be machine parsable. Meta elements are typically used to specify page description, keywords,
+ author of the document, last modified, and other metadata. The metadata can be used by browsers 
+ (how to display content or reload page), search engines (keywords), or other web services.HTML5 introduced 
+ a method to let web designers take control over the viewport (the user's visible area of a web page),
+  through the <meta> tag (See "Setting The Viewport" example below). 
+-->
+
+    <meta charset="utf-8">
+    <!--
+Common HTML Character Sets
+ANSI was the first official default character set in Windows.
+
+The default character set in HTML 4 was 8859-1.
+
+The default character set in HTML 5 is UTF-8.
+MORE INFO at : https://www.w3schools.com/charsets/default.asp 
+-->
+
+
+    <meta name="viewport" content="width=devis-width, initial-scale=1.0">
+    <!--
+Setting The Viewport
+
+HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
+
+The viewport is the user's visible area of a web page. It varies with the device, and will be smaller
+ on a mobile phone than on a computer screen.
+
+You should include the following <meta> viewport element in all your web pages:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device 
+(which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag: 
+-->
+
+
+    <title>My first Scoop page</title>
+</head>
+
+<body>
+    Hello wordl this is html Scoop!
+    <div>
+        <a href="www.cubeely.com">
+            <img src="smiley-face-vector-43934.jpg" alt="a smiley face" style="width:100px;height:100px;border:0;">
+        </a>
+        <!--
+    he width and height attributes always defines the width and height of the image in pixels.
+
+Note: Always specify the width and height of an image. If width and height are not specified, 
+the page might flicker while the image loads.
+
+image in another folder
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+image in another server
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+Chapter Summary
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes to define the size of the image
+Use the CSS width and height properties to define the size of the image (alternatively)
+Use the CSS float property to let the image float
+Use the HTML <map> element to define an image-map
+Use the HTML <area> element to define the clickable areas in the image-map
+Use the HTML <img>'s element usemap attribute to point to an image-map
+Use the HTML <picture> element to show different images for different devices
+Note: Loading images takes time. Large images can slow down your page. Use images car
+
+
+-->
+</body>
+
+</html>
